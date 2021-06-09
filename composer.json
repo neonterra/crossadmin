@@ -1,0 +1,38 @@
+{
+    "name": "neonterra/crossadmin",
+    "description": "Laravel Admin Panel",
+    "keywords": ["crossadmin", "admin panel", "laravel admin panel"],
+    "license": "MIT",
+    "homepage": "https://crossadmin.looporigin.com/",
+    "authors": [
+        {
+            "name": "neonterra",
+            "email": "neonterras@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "illuminate/support": "^5.0|^6.0|^7.0",
+        "laravel/ui": "2.0",
+        "sven/artisan-view": "^3.4"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Neonterra\\Crossadmin\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Crossadmin": "Neonterra\\Crossadmin\\Facades\\Crossadmin"
+            },
+            "providers": [
+                "Neonterra\\Crossadmin\\CrossadminServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
