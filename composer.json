@@ -1,0 +1,23 @@
+{
+    "name": "webjhin/crossadmin",
+    "description": "Laravel Admin Panel",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Webjhin\\Crossadmin\\": "packages/webjhin/crossadmin/src/"
+        },
+        "classmap": [
+
+        ]
+    },
+    "authors": [
+        {
+            "name": "Neon terra",
+            "email": "neonterras@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
